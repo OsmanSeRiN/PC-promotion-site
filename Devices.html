@@ -24,22 +24,113 @@
     </nav>
   </header>
   <!--Header end-->
-    <div class="row">
+    <div class="container">
         <!--ürün içerikleri-->
-        <!---->
-        <aside class="col-sm-auto"> 
-           <ul class="nav nav-pills flex-column mb-auto text-center ">
-            <li class="nav-link "><a class="text-white" href="">Ekran Kartı</a> </li>
-            <li class="nav-link "><a class="text-white" href="">İşlemci</a> </li>
-            <li class="nav-link "><a class="text-white" href="">Anakart</a> </li>
-            <li class="nav-link "><a class="text-white" href="">SSD</a> </li>
-            <li class="nav-link "><a class="text-white" href="">Power Supply</a> </li>
-            <li class="nav-link "><a class="text-white" href="">Kasa</a> </li>
-            <li class="nav-link "><a class="text-white" href="">Monitör</a> </li>
-           </ul>
-        </aside>
-        <section class="container-fluid">
-            <article class="row">
-
-            </article>
-        </section>git 
+        
+        <main class="row">
+        
+          <!--Yan bölüm-->
+          <aside class="col-sm-4"> 
+    
+          </aside>
+          <section class="col-sm-8">
+              <!---->
+              <div class="col-md-7 col-lg-8">
+                <h4 class="mb-3">Adres ve Fatura Bilgisi</h4>
+                <form class="needs-validation" novalidate="">
+                  <div class="row g-3">
+                    <!--Ad kısmı-->
+                    <div class="col-sm-6">
+                      <label for="firstName" class="form-label">Adınız</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                    </div>
+                     <!--Soyad-->                   
+                    <div class="col-sm-6">
+                      <label for="lastName" class="form-label">Soyadınız</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                      <div class="invalid-feedback">
+                      </div>
+                    </div>
+                    <!--Kullanıcı kodu-->
+                    <div class="col-12">
+                      <label for="username" class="form-label">Kullanıcı etiketi yada seri numarası</label>
+                      <div class="input-group has-validation">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                      <div class="invalid-feedback">
+                        </div>
+                      </div>
+                    </div>
+                     <!--E posta-->
+                    <div class="col-12">
+                      <label for="email" class="form-label">E-Posta<span class="text-body-secondary">(Optional)</span></label>
+                      <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                      <div class="invalid-feedback">
+                      </div>
+                    </div>
+                      <!--Adres bilgisi-1-->
+                    <div class="col-12">
+                      <label for="address" class="form-label">Genel Adres</label>
+                      <input type="text" class="form-control" id="address" placeholder="İl,ilçe,cadde,sokak" required="">
+                      <div class="invalid-feedback">
+                      </div>
+                    </div>
+                     <!--Detaylı adres-->
+                    <div class="col-12">
+                      <label for="address2" class="form-label">Adres Tarifi<span class="text-body-secondary">(Optional)</span></label>
+                      <input type="text" class="form-control" id="address2" placeholder="Apartman ismi ,lokasyon vb.">
+                    </div>
+                    <div class="col-sm-12"></div>
+                     <!--Ürün-->
+                    <div class="col-sm-5">
+                      <label for="country" class="form-label">Ürün</label>
+                      <select class="form-select" id="country" required="">
+                        <option value="boş">Seçiniz...</option>
+                        <option value="GPU">Ekran Kartı</option>
+                        <option value="CPU">İşlemci</option>
+                        <option value="Ana kart">Ana Kart</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+                    <!--Ürün no:-->
+                    <div class="col-sm-3">
+                      <label for="zip" class="form-label">Ürün kodu:</label>
+                      <input type="text" class="form-control" id="kod01" placeholder="" required="">
+                      <div class="invalid-feedback">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <hr class="my-4">
+                 <!--Sorun bilgi kısmı-->
+                 <!--radio buton 1-->
+                  <div class="form-check">
+                    <input id="info" name="prefer1" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="same-address">Ürün Garanti kapsamında ve sorunun benle alakası yok.</label>
+                  </div>
+               <br>
+                 <!--radio buton 2-->
+                  <div class="form-check">
+                    <input id="info" name="prefer1" type="radio" class="form-check-input" checked="" required="">
+                    <label class="form-check-label" for="credir">Ürün garanti süresi doldu ama destek kapsamında ücretli tamir talep ediyorum</label>
+                  </div>
+                   <br><br>
+                   <!--Açıklama kısmı-->
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Sorunu detaylı bir biçimde açıkalyınız(Çözüm aşamasını hızlandırmaya yardımcı olacaktır):</label>
+                    <textarea class="form-control" id="T02D" rows="3"></textarea>
+                  </div>
+                  <!---->
+                       
+                  <hr class="my-4">
+                  <!--Buton kısmı-->
+                  <button class="btn btn-primary d-inline-flex align-items-center" type="button"> Kaydı Tamamlayın
+                    <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"></use></svg>
+                  </button>
+                 
+              <!---->
+          </section>
+      </main>
+        
